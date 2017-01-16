@@ -1,0 +1,10 @@
+{
+  "index": "members3",
+  "type": "profile",
+  "body": {
+    "fields": ["userId"],
+    "query": {
+      "term": { "userId": 40530426 }
+    }
+  }
+}

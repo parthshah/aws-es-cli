@@ -1,0 +1,24 @@
+{
+  "name": "aws-es-cli",
+  "version": "0.0.1",
+  "description": "CLI for accessign AWS Elasticsearch",
+  "main": "index.js",
+  "bin": {
+    "aws-es-cli": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Parth Shah"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.7.21",
+    "elasticsearch": "^12.1.3",
+    "http-aws-es": "^1.1.3",
+    "lodash": "^4.17.4",
+    "vorpal": "^1.11.4",
+    "vorpal-log": "^1.1.0"
+  }
+}
