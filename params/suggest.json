@@ -1,0 +1,12 @@
+{
+  "index": "members3",
+  "body": {
+    "handleSuggest1": {
+      "text" : "chris-18",
+      "completion": {
+        "field": "handleSuggest",
+        "size": 10
+      }
+    }
+  }
+}

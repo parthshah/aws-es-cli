@@ -1,10 +1,32 @@
 {
-  "index": "members3",
-  "type": "profile",
+  "index": "projects",
+  "type": "projectV4",
   "body": {
-    "fields": ["userId"],
     "query": {
-      "term": { "userId": 40530426 }
-    }
+      "bool": {
+        "should": [
+          {
+            "query_string": {
+              "query": "*Parth's test*",
+              "analyze_wildcard": true,
+              "fields": ["name^2", "description", "type"]
+            }
+          },
+          {
+            "nested": {
+              "path": "members",
+              "query": {
+                "query_string": {
+                  "query": "*Parth's test*",
+                  "analyze_wildcard": true,
+                  "fields": ["members.email", "members.handle", "members.firstName", "members.lastName"]
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "fields": ["id", "name", "description"]
   }
 }

@@ -1,0 +1,12 @@
+{
+  "index": "members3",
+  "type": "profile",
+  "id": 40579769,
+  "body": {
+    "doc": {
+      "handleSuggest": {
+        "weight": 50
+      }
+    }
+  }
+}
